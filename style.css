@@ -1,0 +1,16 @@
+.image-container {
+  margin-top: 20px;
+}
+
+img.animate {
+  animation-name: bounce;
+  animation-duration: var(--animation-speed, 1s);
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-50px); }
+  100% { transform: translateY(0); }
+}
